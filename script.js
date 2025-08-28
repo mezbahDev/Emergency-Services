@@ -89,3 +89,45 @@ copy.forEach((copy) => {
     { once: true }
   );
 });
+
+// call rate and history add remove function
+
+callButton.forEach((callBtn, index) => {
+  callBtn.addEventListener("click", function () {
+    let balance = parseInt(coinNumber.innerText);
+    if (balance < 20) {
+      alert("Insufficienct Balance");
+      return;
+    }
+    const name = serviceName[index].innerText;
+    const number = hotlineNumber[index].innerText;
+
+    alert(`Calling ${name} ${number}...`);
+    balance = balance - 20;
+    coinNumber.innerText = balance;
+
+    const date = new Date();
+    const time = date.toLocaleTimeString("en-US", { hour12: true });
+
+    const newDiv = document.createElement("div");
+    newDiv.classList.add(
+      "px-[18px]",
+      "py-[16px]",
+      "flex",
+      "justify-between",
+      "items-center"
+    );
+    newDiv.innerHTML = `<div>
+        <h1 class="font-inter font-semibold text-[18px]">${name}</h1>
+        <p class="font-hind text-[18px]">${number}</p>
+      </div>
+      <p class="font-hind text-[18px]">${time}</p>`;
+    callHistory.appendChild(newDiv);
+  });
+});
+
+clearButton.addEventListener("click", () => {
+  while (callHistory.children.length > 1) {
+    callHistory.removeChild(callHistory.lastChild);
+  }
+});
