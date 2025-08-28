@@ -94,8 +94,368 @@
     </div>
 
 
+    <!-- hero section -->
+    <div class="pt-[48px] px-[60px] pb-[86px] bg-[#F5FFF6] flex flex-col md:flex-row md:gap-[30px] gap-[80px]">
 
-    <script src="script.js"></script>
+
+        <!-- hero number section -->
+
+        <div class="md:max-w-[1370px] mx-auto gap-[20px] flex flex-col md:flex-row md:flex-wrap">
+
+            <!-- National emergency section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/emergency.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="nationalHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">National Emergency Number</h1>
+                        <p id="nationalServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">National Emergency
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="nationalHotlineNumber" class="font-roboto font-bold text-[32px]">999</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2] text-[#5C5C5C] inline-flex justify-center rounded-[30%] text-[18px]">
+                            All
+                        </div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+                        <button id="nationalCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="nationalCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- police helpline section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#DFEFFF] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/police.png" alt="police light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="policeHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Police Helpline Number</h1>
+                        <p id="policeServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Police</p>
+                    </div>
+                    <div>
+                        <h1 id="policeHotlineNumber" class="font-roboto font-bold text-[32px]">999</h1>
+                        <div
+                            class="bg-[#F2F2F2] px-[20px] py-[6px] text-[#5C5C5C] inline-flex justify-center rounded-[30%] text-[18px]">
+                            Police</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+                        <button id="policeCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="policeCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fire service section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/fire-service.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="fireHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Fire Service Number</h1>
+                        <p id="fireServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Fire Service</p>
+                    </div>
+                    <div>
+                        <h1 id="fireHotlineNumber" class="font-roboto font-bold text-[32px]">999</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            Fire</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="fireCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="fireCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ambulance service section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/ambulance.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="ambulanceHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Ambulance Service</h1>
+                        <p id="ambulanceServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Ambulance</p>
+                    </div>
+                    <div>
+                        <h1 id="ambulanceHotlineNumber" class="font-roboto font-bold text-[32px]">1994-999999</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            Health</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="ambulanceCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="ambulanceCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- women and child service section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/emergency.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="womenHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Women & Child Helpline</h1>
+                        <p id="womenServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Women & Child Helpline
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="womenHotlineNumber" class="font-roboto font-bold text-[32px]">109</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            Help</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="womenCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="womenCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Anti-corruption service section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/emergency.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="corruptionHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Anti-Corruption Helpline</h1>
+                        <p id="antiCorruptionServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Anti-Corruption
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="antiCorruptionHotlineNumber" class="font-roboto font-bold text-[32px]">106</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            Govt.</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="antiCorruptionCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="antiCorruptionCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Electricity Helpline section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/emergency.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart" id="electricityHeart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Electricity Helpline</h1>
+                        <p id="electricityServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Electricity
+                            Outrage</p>
+                    </div>
+                    <div>
+                        <h1 id="electricityHotlineNumber" class="font-roboto font-bold text-[32px]">16216</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            Electricity</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="electricityCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="electricityCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Brac Helpline section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/brac.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" id="bracHeart" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Brac Helpline</h1>
+                        <p id="bracServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Brac</p>
+                    </div>
+                    <div>
+                        <h1 id="bracHotlineNumber" class="font-roboto font-bold text-[32px]">16445</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            All</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="bracCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg px-[16px] py-[12px] cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="bracCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Bangladesh Railway Helpline section -->
+
+            <div
+                class="p-8 flex flex-col gap-4 bg-white max-w-[436px] rounded-[12px] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+                <div class="flex justify-between max-w-[436px] items-center gap-4">
+                    <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-[16px]">
+                        <img src="assets/Bangladesh-Railway.png" alt="red light" class="w-[32px]" />
+                    </div>
+                    <img src="assets/heartWhite.png" alt="heart"
+                        class="w-[24px] h-[24px] cursor-pointer hover:scale-105" id="railwayHeart" />
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div>
+                        <h1 class="text-[24px] font-bold">Bangladesh Railway Helpline</h1>
+                        <p id="railwayServiceName" class="text-[18px] text-[#5C5C5C] font-roboto">Bangladesh Helpline
+                        </p>
+                    </div>
+                    <div>
+                        <h1 id="railwayHotlineNumber" class="font-roboto font-bold text-[32px]">163</h1>
+                        <div
+                            class="px-[20px] py-[6px] text-[#5C5C5C] bg-[#F2F2F2]  inline-flex justify-center rounded-[30%] text-[18px]">
+                            Travel</div>
+                    </div>
+                    <div class="flex md:flex-row flex-col md:items-center items-start gap-2">
+
+                        <button id="railwayCopyButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 cursor-pointer hover:bg-black hover:text-white">
+                            <i class="ri-file-copy-line w-4 hover:text-white"></i>
+                            Copy
+                        </button>
+                        <button id="railwayCallButton"
+                            class="flex items-center justify-center gap-[6px] w-[182px] box-border border border-[#D4D6D5] rounded-lg p-4 bg-[#00A63E] text-white cursor-pointer hover:scale-105">
+                            <i class="ri-phone-line w-[20px] font-roboto"></i>
+                            Call
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
 </body>
 
 </html>
