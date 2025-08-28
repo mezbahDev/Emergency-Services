@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Service</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+
+    <!-- hind madurai font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--  remix icon link    -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .font-hind {
+            font-family: 'Hind Madurai', sans-serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-hind m-0 p-0">
+
+
+    <!-- navbar section -->
+
+    <nav class="fixed top-0 left-0 w-full bg-white flex justify-between 
+            md:px-[60px] md:py-[24px] px-[10px] py-[10px] shadow-md">
+        <div class="flex items-center cursor-pointer md:gap-[10px] gap-[5px] ">
+            <img src="assets/logo.png" alt="govt logo" class="md:w-[50px] w-[40px]" />
+            <p class="text-[#006747] font-[900] md:text-[1.2rem]">Emergency<br> Service</p>
+        </div>
+
+        <div class="flex md:gap-5 gap-2">
+            <div
+                class="flex items-center rounded-[50px] bg-[#41FF6B19] items-center justify-center md:w-[123px] h-[52px] md:gap-[10px] md:p-3 gap-[5px] px-2">
+                <p id="heartNumber" class="font-inter font-bold">0</p>
+                <img src="assets/heart.png" alt="red heart" class="md:w-[30px] w-[20px]" />
+            </div>
+            <div
+                class="flex items-center rounded-[50px] bg-[#41FF6B19] items-center justify-center md:w-[123px] h-[52px] md:gap-[10px] md:p-3 gap-[5px] px-2">
+                <p id="coinNumber" class="font-inter font-bold">100</p>
+                <img src="assets/coin.png" alt="coin pic" class="w-[30px]" />
+            </div>
+            <div
+                class="flex items-center md:px-[36px] md:py-[12px] font-[600] text-white md:gap-[10px] md:p-3 rounded-[50px] bg-[#00A63E] items-center justify-center cursor-pointer hover:scale-105 px-[20px] gap-1">
+                <p id="copyNumber" class="text-[1.1rem]">0</p>
+                <p class="text-[1.1rem]">Copy</p>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
