@@ -79,12 +79,18 @@ hearts.forEach((heart) => {
 
 // copy number increased function
 
-copy.forEach((copy) => {
-  copy.addEventListener(
+copy.forEach((copyBtn, index) => {
+  copyBtn.addEventListener(
     "click",
     function () {
-      let count = parseInt(copyNumber.innerText);
-      copyNumber.innerText = count + 1;
+      const number = hotlineNumber[index].innerText;
+
+      navigator.clipboard.writeText(number).then(() => {
+        alert("Copied : " + number);
+
+        let count = parseInt(copyNumber.innerText);
+        copyNumber.innerText = count + 1;
+      });
     },
     { once: true }
   );
