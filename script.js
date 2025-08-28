@@ -76,3 +76,16 @@ hearts.forEach((heart) => {
     { once: true }
   );
 });
+
+// copy number increased function
+
+copy.forEach((copy) => {
+  copy.addEventListener(
+    "click",
+    function () {
+      let count = parseInt(copyNumber.innerText);
+      copyNumber.innerText = count + 1;
+    },
+    { once: true }
+  );
+});
